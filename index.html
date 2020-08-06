@@ -5,50 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" > -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="dist/aos.css">
     
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
     <style>
-        .corner
-        {
-             border-radius: 25px; 
-        }
-
-        .nav-item a:hover {
-            color: rgb(245, 209, 48)!important;
-            
-        }
+        
     </style>
   </head>
 
-  <body class="body"  style="padding-top: 60px; padding-bottom: 60px; background-image:url(images/bg.jpg" id="home">
+  <body class="body" id="home">
       <div class="container pt-3 bg-dark text-white corner">
-        <div class=" bg-dark text-white">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class=" bg-dark text-white shadow" data-aos="fade-down" data-aos-duration="2000">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark " >
                 <a class="navbar-brand mr-3 mt-2 mb-2 rounded-circle bg-warning text-dark text-center font-weight-bolder " style="width:50px;" href="#"><h3>IA</h3></a>
                 <a class="navbar-brand " href="#">Izzath Ali</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <div class="collapse navbar-collapse navi" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#edu">Education</a>
+                            <a class="nav-link" href="#home" id="hm">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#edu">Experience</a>
+                            <a class="nav-link" href="#edu" id="educa" >Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#prj">Projects</a>
+                            <a class="nav-link" href="#edu" id="expr">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skl">Skills</a>
+                            <a class="nav-link" href="#prj" id="pr">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skl" id="sk">Skills</a>
                         </li>
                         
                     </ul>
@@ -56,54 +51,59 @@
                 </div>
             </nav>
         </div>
-        <div class="row" style="padding-top: 150px;;"> 
-            <div class="col-lg-6" >
-                <div class="div ml-5" style=" height:400px;">
-                    <img class="rounded-circle mt-4 ml-5 shadow-lg" src="images/profile.jpg" alt="Card image" style="width:350px;height: 80%;border: 15px solid gray;">
+        <div class="row" style="padding-top: 150px;;">
+            <div class="col-lg-1">
+                
+            </div> 
+            <div class="col-lg-5 profile" data-aos="fade-right" data-aos-duration="2000">
+                <div class="div ml-1" style=" height:400px;">
+                    <img class="rounded-circle ml-1 shadow-lg img-fluid prof" src="images/profile.jpg" alt="Card image" >
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="mt-lg-5">
+            <div class="col-lg-5" data-aos="fade-left" data-aos-duration="2000">
+                <div class="mt-5 ">
                     <h6>Software Engineer</h6>
                     <h1>Izzath Ali</h1>
                     <p>A Challenging and growth oriented position in  a progressive company, where i contribute to the organization's success with my financial expertise & through my innovative ideas and desire to achieve
                         excellence.
                         </p>
-                        <a href="#cont"><button type="button" class="btn btn-outline-warning ">Contact</button> </a>
+                        <a href="#cont"><button type="button" class="btn btn-outline-warning " id="cont">Contact</button> </a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg text-center mt-5">
-                <h1>THIS IS WHAT I DO</h1>
-                <p class="text-warning">____________________________</p>
-                <p>
-                    </p>
-            </div>
-        </div>
-        
-        <div class="row mt-3">
-            <div class="col-md-4">
-                <div class="card text-left bg-dark text-center mt-3 border-0">
-                  <i class="fa fa-desktop text-warning" style="font-size:48px;"></i>
-                  <div class="card-body">
-                    <h4 class="card-title">Desktop Application</h4>
-                  </div>
+        <div class="do">
+            <div class="row" data-aos="zoom-in-up" data-aos-duration="2000" >
+                <div class="col-lg text-center mt-5">
+                    <h1>THIS IS WHAT I DO</h1>
+                    <p class="text-warning">____________________________</p>
+                    <p>
+                        </p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card text-left bg-dark text-center mt-2 border-0">
-                    <i class="material-icons text-warning " style="font-size:60px;">&#xe051;</i>
-                  <div class="card-body">
-                    <h4 class="card-title">Website</h4>
-                  </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-4 shadow-lg" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card text-left bg-dark text-center mt-3 border-0">
+                      <i class="fa fa-desktop text-warning" style="font-size:48px;"></i>
+                      <div class="card-body">
+                        <h4 class="card-title">Desktop Application</h4>
+                      </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-left bg-dark text-center mt-2 border-0">
-                    <i class="material-icons text-warning" style="font-size:60px;">&#xe051;</i>
-                    <div class="card-body">
-                        <h4 class="card-title">Web Application</h4>
+                <div class="col-md-4 shadow-lg" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="card text-left bg-dark text-center mt-2 border-0">
+                        <i class="material-icons text-warning " style="font-size:60px;">&#xe051;</i>
+                      <div class="card-body" >
+                        <h4 class="card-title">Website</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 shadow-lg" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card text-left bg-dark text-center mt-2 border-0">
+                        <i class="material-icons text-warning" style="font-size:60px;">&#xe051;</i>
+                        <div class="card-body">
+                            <h4 class="card-title">Web Application</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,55 +111,73 @@
 
         <div class="row mt-5 ml-5" id="edu">
             <div class="col-md-6 mt-5">
-                <h1 class=""  >EDUCATION</h1>
-                <div class="progress progress-bar mb-4  bg-warning" role="progressbar" style="width: 45%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2017&nbsp;</p><p style="color: grey;"> Kalugamuva Central Collage</p>
-                <div class="card ml-3 bg-dark border-0">
-                    <h6>G. C. E. (Advanced Level) Examination</h6>
-                    <p class="ml-5"></p>
+                <div class="hd" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <h1 class=""  >EDUCATION</h1>
+                    <div class="progress progress-bar mb-4  bg-warning" role="progressbar" style="width: 45%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    </div>
                 </div>
-                
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid;">&nbsp;2018&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
-                <div class="card ml-3 bg-dark border-0">
-                    <h6>Diploma in English</h6>
-                    <p></p>
-                </div>
-                
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid;">&nbsp;2018&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
-                <div class="card ml-3 bg-dark border-0">
-                    <h6>Diploma in Web Designing.</h6>
-                    <h6>Diploma in Programming.</h6>
-                    <h6>Diploma in Hardware Technology with Networking.</h6>
+                <div class="educa ml-4">
 
-                    <p></p>
-                </div>
+                    <div class="ed shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                        <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2017&nbsp;</p><p style="color: grey;"> Kalugamuva Central Collage</p>
+                        <div class="card ml-3 bg-dark border-0">
+                            <h6>G. C. E. (Advanced Level) Examination</h6>
+                            <p class="ml-5"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="ed shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                        <p class="float-left mr-2 rounded border-warning" style="border: 2px solid;">&nbsp;2018&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
+                        <div class="card ml-3 bg-dark border-0">
+                            <h6>Diploma in English</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="ed shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                        <p class="float-left mr-2 rounded border-warning" style="border: 2px solid;">&nbsp;2018&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
+                        <div class="card ml-3 bg-dark border-0">
+                            <h6>Diploma in Web Designing.</h6>
+                            <h6>Diploma in Programming.</h6>
+                            <h6>Diploma in Hardware Technology with Networking.</h6>
 
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2018&nbsp;</p><p style="color: grey;">Golden college</p>
-                <div class="card ml-3 bg-dark border-0">
-                    <h6>Diploma in General computerized Accounting.</h6>
-                    <p></p>
-                </div>
+                            <p></p>
+                        </div>
+                    </div>
 
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2020&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
-                <div class="card ml-2 bg-dark border-0">
-                    <h6>Higher National Diploma in Computing.</h6>
-                    <p></p>
+                    <div class="ed shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                        <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2018&nbsp;</p><p style="color: grey;">Golden college</p>
+                        <div class="card ml-3 bg-dark border-0">
+                            <h6>Diploma in General computerized Accounting.</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="ed shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                        <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2020&nbsp;</p><p style="color: grey;"> BCAS Campus</p>
+                        <div class="card ml-2 bg-dark border-0">
+                            <h6>Higher National Diploma in Computing.</h6>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-5">
-                <h1 class="">EXPERIENCE</h1>
-                <div class="progress progress-bar mb-4  bg-warning" role="progressbar" style="width: 45%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="col-md-6 mt-5" >
+                <div class="hd" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <h1 class="">EXPERIENCE</h1>
+                    <div class="progress progress-bar mb-4  bg-warning" role="progressbar" style="width: 45%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="exprn ml-4 shadow-lg mb-4 pt-3 pl-4" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2018&nbsp;</p><p style="color: grey;"> SHAAM Enterprises, Sri Lanka.</p>
+                    <div class="card ml-3 bg-dark border-0">
+                        <h6>Accountant - Quick Book</h6>
 
-                <p class="float-left mr-2 rounded border-warning" style="border: 2px solid ;">&nbsp;2018&nbsp;</p><p style="color: grey;"> SHAAM Enterprises, Sri Lanka.</p>
-                <div class="card ml-3 bg-dark border-0">
-                    <h6>Accountant - Quick Book</h6>
-
-                    <p></p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="row mt-5" id="prj">
+        
+        <div class="prr" id="prjct"></div>
+        <div class="row mt-5"  data-aos="zoom-in-up" data-aos-duration="2000">
             <div class="col-lg text-center mt-5">
                 <h1>PERSONAL PROJECTS</h1>
                 <p class="text-warning">________________________________</p>
@@ -168,8 +186,8 @@
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col-md-6">
+        <div class="row mt-3 ">
+            <div class="col-md-6 shadow-lg" data-aos="zoom-in-right" data-aos-duration="2000">
                 <i class="fa fa-database float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
                 <div class="card text-left bg-dark text-center border-0">
                   <div class="card-body ">
@@ -179,7 +197,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 shadow-lg" data-aos="zoom-in-right" data-aos-duration="2000">
                 <i class="material-icons float-left mt-3 ml-5 text-warning" style="font-size:60px;">&#xe02f;</i>
                 <div class="card text-left bg-dark text-center border-0">
                   <div class="card-body">
@@ -191,7 +209,7 @@
             </div>
         </div>
         <div class="row mt-3 ">
-            <div class="col-md-6">
+            <div class="col-md-6 shadow-lg" data-aos="zoom-in-right" data-aos-duration="2000">
                 <i class="fab fa-php float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
                 <div class="card text-left bg-dark text-center border-0">
                   <div class="card-body">
@@ -201,7 +219,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 shadow-lg" data-aos="zoom-in-right" data-aos-duration="2000">
                 <i class="fab fa-css3-alt float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
                 <div class="card text-left bg-dark text-center border-0">
                   <div class="card-body">
@@ -215,117 +233,134 @@
 
         <div class="row mt-5 ml-5">
             <div class="col-md-6 mt-5">
-                <h2 class="mb-4">GROUP PROJECT</h2>
-                <i class="fa fa-desktop float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
-                <div class="card text-left bg-dark text-center border-0">
-                  <div class="card-body">
-                    <h4 class="card-title">Desktop Application</h4>
-                    <p class="card-text" style="color: gray;"> Billing System C#.
-                    </p>
-                  </div>
-                </div>
+                <h2 class="">GROUP PROJECT</h2>
+                <div class="progress progress-bar bg-warning mb-4" role="progressbar" style="width: 30%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="grp shadow-lg" data-aos="zoom-out-right" data-aos-duration="2000">
+                        <i class="fa fa-desktop float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
+                        <div class="card text-left bg-dark text-center border-0">
+                        <div class="card-body">
+                            <h4 class="card-title">Desktop Application</h4>
+                            <p class="card-text" style="color: gray;"> Billing System C#.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
             </div>
-            <div class="col-md-6 mt-5">
-                <h2 class="mb-4">SAMPLE PROJECT</h2>
-                <i class="fas fa-address-card float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
-                <div class="card text-left bg-dark text-center border-0">
-                  <div class="card-body">
-                    <h4 class="card-title">Website</h4>
-                    <p class="card-text" style="color: gray;"> Address Book. ASP .NET MVC
-                    </p>
-                  </div>
-                </div>
+            <div class="col-md-6 mt-5 ">
+                <h2 class="">SAMPLE PROJECT</h2>
+                <div class="progress progress-bar bg-warning mb-4" role="progressbar" style="width: 30%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="sam shadow-lg" data-aos="zoom-out-left" data-aos-duration="2000">
+                        <i class="fas fa-address-card float-left mt-3 ml-5 text-warning" style="font-size:48px;"></i>
+                        <div class="card text-left bg-dark text-center border-0">
+                        <div class="card-body">
+                            <h4 class="card-title">Website</h4>
+                            <p class="card-text" style="color: gray;"> Address Book. ASP .NET MVC
+                            </p>
+                        </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
         <div class="row mt-5 " id="skl">
             <div class="col-md-5 mt-5 mb-5 ml-5">
-                <h2>CODING SKILLS</h2>
+                <h2 >CODING SKILLS</h2>
                 <div class="progress progress-bar bg-warning" role="progressbar" style="width: 30%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 
-                <p class="mt-4 ml-4">C#</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="cod shadow-lg pb-3 pr-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4 pt-1">C#</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-
-                <p class="mt-4 ml-4">HTML / CSS / bootstrap</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="cod shadow-lg pb-3 pr-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4 pt-1">HTML / CSS / bootstrap</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-
-                <p class="mt-4 ml-4">PHP</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="cod shadow-lg pb-3 pr-3 " data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4 pt-1">PHP</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
+                <div class="cod shadow-lg pb-3 pr-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4 pt-1">JavaScript</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
 
-                <p class="mt-4 ml-4">JavaScript</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-
             </div>
 
             <div class="col-md-5 mt-5 ml-5">
                 <h2>LANGUAGE</h2>
                 <div class="progress progress-bar bg-warning" role="progressbar" style="width: 25%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 
-                <p class="mt-4 ml-4">Tamil</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+                <div class="lang shadow-lg pb-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4">Tamil</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
 
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-
-                <p class="mt-4 ml-4">English</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="lang shadow-lg pb-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4">English</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+    
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-
-                <p class="mt-4 ml-4">Singhala</p>
-                <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
-
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="lang shadow-lg pb-3" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="mt-4 ml-4">Singhala</p>
+                    <div class="progress rounded ml-4" style="height: 8px; border:2px solid black; ;" >
+    
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" id="cont">
-            <div class="col-md-12 mt-5">
+        <div class="row " id="contct">
+            <div class="col-md-12 mt-5" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="ml-5 mt-5">CONTACT</h1>
                 <div class="progress progress-bar bg-warning ml-5 mb-3" role="progressbar" style="width: 8%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 mt-5 mb-1">
-
-                <i class="fa fa-phone float-left mt-4 ml-5 text-warning" style="font-size:40px;"></i>
-                <div class="card text-left bg-dark border-0">
-                  <div class="card-body">
-                    <h4 class="card-title">Phone</h4>
-                    <p class="card-text" style="color: gray;">94 77 222 0401</p>
-                  </div>
+        <div class="row ">
+            <div class="col-md-4 mt-5 mb-1 shadow-lg" data-aos="fade-right" data-aos-duration="3000">
+                <div class="">
+                    <i class="fa fa-phone float-left mt-4 ml-5 text-warning" style="font-size:40px;"></i>
+                    <div class="card text-left bg-dark border-0">
+                        <div class="card-body">
+                        <h4 class="card-title">Phone</h4>
+                        <p class="card-text" style="color: gray;">94 77 222 0401</p>
+                        </div>
+                    </div>
                 </div>
-
-                <i class="material-icons float-left mt-4 ml-5 text-warning" style="font-size:40px;">&#xe568;</i>
-                <div class="card text-left bg-dark border-0">
-                  <div class="card-body">
-                    <h4 class="card-title">Location</h4>
-                    <p class="card-text" style="color: gray;">178/1, New Elpitiya, Gelioya, Sri Lanka.</p>
-                  </div>
+                <div class="">
+                    <i class="material-icons float-left mt-4 ml-5 text-warning" style="font-size:40px;">&#xe568;</i>
+                    <div class="card text-left bg-dark border-0">
+                        <div class="card-body">
+                        <h4 class="card-title">Location</h4>
+                        <p class="card-text" style="color: gray;">178/1, New Elpitiya, Gelioya, Sri Lanka.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <i class="material-icons float-left mt-4 ml-5 text-warning" style="font-size:40px;">&#xe0be;</i>
-                <div class="card text-left bg-dark border-0">
-                  <div class="card-body">
-                    <h4 class="card-title">Email</h4>
-                    <p class="card-text" style="color: gray;">izzath.info@gmail.com</p>
-                  </div>
+                <div class="">
+                    <i class="material-icons float-left mt-4 ml-5 text-warning" style="font-size:40px;">&#xe0be;</i>
+                    <div class="card text-left bg-dark border-0">
+                        <div class="card-body">
+                        <h4 class="card-title">Email</h4>
+                        <p class="card-text" style="color: gray;">izzath.info@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="col-8 ml-5 mb-5">
-                    <h3 class="mt-1 mb-3">How Can I Help You?</h3>
+            <div class="col-md-8 contact" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+                <div class="col-8 ml-5 mb-5 " >
+                    <h3 class="mt-5 mb-3">How Can I Help You?</h3>
                     <div class="progress progress-bar mb-3 bg-warning" role="progressbar" style="width: 30%;height: 1px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     <form action="">
                         <div class="form-group ">
@@ -340,13 +375,13 @@
                           <div class="form-group mt-3">
                               <textarea name="" required id="" cols="30" class="form-control bg-dark text-white" rows="4" placeholder="Message"></textarea>
                           </div>
-                          <button type="submit" class="btn btn-outline-warning flex-left">Send Message</button>
+                          <button type="submit" class="btn btn-outline-warning flex-left ">Send Message</button>
                     </form>
                 </div>
                 
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col text-center">
                 <p class="">© 2020 All rights reserved.</p>
             </div>
@@ -356,6 +391,50 @@
       
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script> -->
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="dist/aos.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        AOS.init();
+
+
+        $('#hm').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#home").offset().top 
+            }, 2000); 
+        }); 
+
+        $('#educa').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#edu").offset().top 
+            }, 2000); 
+        }); 
+
+        $('#expr').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#edu").offset().top 
+            }, 2000); 
+        }); 
+
+        $('#pr').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#prjct").offset().top 
+            }, 2000); 
+        }); 
+
+        $('#sk').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#skl").offset().top 
+            }, 2000); 
+        }); 
+
+        $('#cont').click(function(){ 
+            $('html, body').animate({ 
+                scrollTop: $("#contct").offset().top 
+            }, 2000); 
+        }); 
+    </script>
   </body>
 </html>
